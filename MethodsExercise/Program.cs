@@ -30,13 +30,38 @@ namespace MethodsExercise
 
             BeastBathSoap();
 
+            Console.WriteLine(Add(4, 8));
 
+            int answer = Subtract(9, 5);
+            Console.WriteLine(answer);
 
+            Console.WriteLine("Input first number");
+            var x = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Input 2nd number");
+            var y = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(Add(x, y));
 
         }
 
+        public static int Add(int num1, int num2)
+        {
+            return num1 + num2;
 
+        }
 
+        public static int Subtract(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+        public static int Multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+        public static int Divide(int num1, int num2)
+        {
+            return num1 / num2;
+        }
     }
-}
+}            
